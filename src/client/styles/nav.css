@@ -1,9 +1,11 @@
- .navbar{
+ 
+.navbar{
     background-color:whitesmoke;
     display: flex;
     justify-content: space-between;
     text-align: center;
     height: 75px;
+    font-family: 'Montserrat', sans-serif;
 }
 .nav-links {
 
@@ -16,11 +18,17 @@
     
 }
 
-.navbar h1 {  
-  margin-top: 30px;
-  text-align: center;
+.navbar h1{  
+  margin-top: 20px;
   color: green;
+text-align:right;
 } 
+ 
+p{
+
+    text-decoration-color: lawngreen;
+    text-overflow: ellipsis;
+}
 
 .nav a {
   float: right;

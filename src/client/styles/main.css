@@ -27,13 +27,9 @@ form{
   text-align: center;
 }
 h2 {
-  text-align: center;
+  text-align: left;
 }
 
-p{
-  text-align: left;
-  font-weight: bold;
-}
 
 /* Full-width input fields */
 input[type=text], input[type=date] {
@@ -41,12 +37,18 @@ input[type=text], input[type=date] {
   padding: 10px;
   margin: 5px 0 15px 0;
   background:white;
-  text-align: right;
+  text-align:center;
 }
 
 input[type=text]:focus, input[type=date]:focus {
   background-color: #ddd;
-  outline: none;
+  outline:lightcoral;
+}
+
+main p {
+    text-align: left;
+    font-weight: bolder;
+
 }
 
 /* Set a style for the submit button */
