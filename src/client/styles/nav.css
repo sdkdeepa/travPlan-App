@@ -19,5 +19,24 @@
 .navbar h1 {  
   margin-top: 30px;
   text-align: center;
-    color: green;
+  color: green;
 } 
+
+.nav a {
+  float: right;
+  display: block;
+  color: green;
+  text-align: center;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.nav ol {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+ul {
+  padding: 2px;
+  margin: 0 0 0 0;
+}
