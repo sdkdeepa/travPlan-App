@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>TravPlan</title>
+	<link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+	<link rel="icon" type="image/png" href="favicon.ico">
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- google font api and fontawesome-->
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+		rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<!-- CSS style sheets -->
+	<link rel="stylesheet" href="../styles/main.css">
+	<link rel="stylesheet" href="../styles/footer.css">
+	<link rel="stylesheet" href="../styles/nav.css">
+	<script src="https://use.fontawesome.com/releases/v5.9.0/js/all.js" data-auto-replace-svg></script>
+</head>
+
+<body>
+	<div id="main">
+		<nav class="navbar">
+			<img alt="TravPlan" src="../images/logo-1.png" class="logo ">
+			<h1> Welcome to TravPlan</h1>
+			<ul class="nav-links">
+				<ol class="nav-item">
+					<a href="#" class="nav-my-trips">My Trips</a>
+				</ol>
+			</ul>
+		</nav>
+	</div>
+	<main> 
+	<!-- reference : https://www.w3schools.com/howto/howto_css_form_on_image.asp -->
+			<img alt="suitcase" src="../images/suitcase.jpg" class="bg-img">
+			<form class="container" action="action_page.php">
+				<div class="top-right"> 
+				<h2>Plan a trip </h2>
+				</div>
+				<label for="desitnation"><p>From</p></label>
+				<input type="text" placeholder="where to?" name="where-to" required>
+
+				<label for="desitnation"><p>To</p></label>
+				<input type="text" placeholder="where to?" name="where-to" required>
+
+				<label for="start-date"><p>Start Date</p></label>
+				<input type="date" placeholder="Starting on" name="start" required>
+
+				<label for="end-date"><p>End Date</p></label>
+				<input type="date" placeholder="Starting on" name="end" required>
+
+				<button type="submit" class="btn">Plan</button>
+			</form>	
+	</main>
+
+
+	<footer>
+	<div class= "container-footer">
+		<p> &copy; 2020 travPlan by <a href="https://github.com/sdkdeepa" target="_blank">Deepa Subramanian</a></p>
+	</div>
+	</footer>
+
+	<!-- Register Service Workers -->
+	<script>
+		// Check that service workers are supported
+		if ("serviceWorker" in navigator) {
+			// Use the window load event to keep the page load performant
+			window.addEventListener("load", () => {
+				navigator.serviceWorker.register("/service-worker.js");
+			});
+		}
+	</script>
+</body>
+
+</html
