@@ -82,6 +82,15 @@ At least one of these is required, but the rest are great additional ways to fur
 - Allow user to Print their trip and/or export to PDF.
 - Allow the user to add a todo list and/or packing list for their trip.
 - Allow the user to add additional trips(this may take some heavy reworking, but is worth the challenge).
-     
         a) Automatically sort additional trips by countdown.
         b) Move expired trips to bottom/have their style change so it’s clear it’s expired.
+
+## References used:
+- [Favicon creation](https://favicon.io/favicon-generator/)
+- [Pixabay](https://pixabay.com/)
+- [Logo creation](https://www.freelogodesign.ca/)
+- [Geonames](https://www.geonames.org/)
+- [Weatherbit](https://www.weatherbit.io/)
+- [W3Schools](https://www.w3schools.com/) `https://www.w3schools.com/howto/howto_css_form_on_image.asp`
+- [App layout](https://wanderlog.com/)
+

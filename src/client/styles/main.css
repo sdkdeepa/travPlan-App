@@ -1,0 +1,91 @@
+body, main{ 
+  height: 100%;
+  margin: 0;
+}
+ .bg-img {
+     min-height: 400px;
+  /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    width:100%;
+}
+
+/* Add styles to the form container */
+.container {
+  position: absolute;
+  text-align: left;
+  color:green; 
+}
+
+form{
+  position:relative;
+  top: 50%;
+  right: 0;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+h2 {
+  text-align: center;
+}
+
+p{
+  text-align: left;
+  font-weight: bold;
+}
+
+/* Full-width input fields */
+input[type=text], input[type=date] {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0 15px 0;
+  background:white;
+  text-align: right;
+}
+
+input[type=text]:focus, input[type=date]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for the submit button */
+.btn {
+
+  background-color:#f75940;
+  padding: 10px 10px;
+  border: none;
+  cursor: pointer;
+  width: 110%;
+  opacity: 0.9;
+  font-size: 16px;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 10px;
+  text-align: center;
+  font-weight: bold;  
+}
+
+.btn:hover {
+  opacity: 1;
+  top: 20%;
+  left: 70%;
+  color: green;
+}
+
+ @media (min-width: 1100px) {
+  .blog {
+    display: flexbox;
+    flex-grow: 0px;
+  }
+} 
+
+/*Blogs Grid Medium screens */
+@media (min-width: 600px) and (max-width: 1100px) {
+  .blog {
+    display: flex;
+    justify-content: space-evenly;
+    grid-gap: 10px;
+  }
+}
