@@ -1,45 +1,40 @@
- 
-.navbar{
-    background-color:whitesmoke;
-    display: flex;
-    justify-content: space-between;
-    text-align: center;
-    height: 75px;
-    font-family: 'Montserrat', sans-serif;
+.navbar {
+  background-color: whitesmoke;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  height: 75px;
+  font-family: "Montserrat", sans-serif;
 }
 .nav-links {
-
-    transition: 0.3s;
-    display: flex;
-    font-weight: bolder;
-    float: right;
-    margin-right: 40px;
-    align-self: center;
-    
+  transition: 0.3s;
+  display: flex;
+  font-weight: bolder;
+  float: right;
+  margin-right: 40px;
+  align-self: center;
 }
 
-.navbar h1{  
+.navbar h1 {
   margin-top: 20px;
   color: green;
-text-align:right;
-} 
- 
-p{
+  text-align: right;
+}
 
-    text-decoration-color: lawngreen;
-    text-overflow: ellipsis;
+p {
+  text-decoration-color: lawngreen;
+  text-overflow: ellipsis;
 }
 
 .nav a {
   float: right;
   display: block;
-  color: green;
   text-align: center;
   text-decoration: none;
   transition: 0.3s;
 }
 
-.nav ol {
+.nav li {
   display: inline-block;
   margin-right: 20px;
 }

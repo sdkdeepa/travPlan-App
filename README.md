@@ -1,5 +1,17 @@
 # Udacity-FEND-capstone-project
 
+## References used:
+- [Favicon creation](https://favicon.io/favicon-generator/)
+- [Pixabay](https://pixabay.com/)
+- [Logo creation](https://www.freelogodesign.ca/)
+- [Geonames](https://www.geonames.org/)
+- [Weatherbit](https://www.weatherbit.io/)
+- [W3Schools](https://www.w3schools.com/) `https://www.w3schools.com/howto/howto_css_form_on_image.asp`
+- [App layout](https://wanderlog.com/)
+- [JS Doc](https://jsdoc.app/)
+- [Local storage](https://www.taniarascia.com/how-to-use-local-storage-with-javascript/)
+- [Adding multiple HTML to webpack](https://www.ivarprudnikov.com/static-website-multiple-html-pages-using-webpack-plus-github-example/)
+
 # Development Environment and Architecture
 ## Architecture:
 The project should have a structure like the one shown below. All files shown must be present (Webpack may be split into multiple config files, and names may differ) and the app must successfully render a home page with clear design and functionality added when index.html is loaded in the browser. No errors should display in console.
@@ -85,12 +97,5 @@ At least one of these is required, but the rest are great additional ways to fur
         a) Automatically sort additional trips by countdown.
         b) Move expired trips to bottom/have their style change so it’s clear it’s expired.
 
-## References used:
-- [Favicon creation](https://favicon.io/favicon-generator/)
-- [Pixabay](https://pixabay.com/)
-- [Logo creation](https://www.freelogodesign.ca/)
-- [Geonames](https://www.geonames.org/)
-- [Weatherbit](https://www.weatherbit.io/)
-- [W3Schools](https://www.w3schools.com/) `https://www.w3schools.com/howto/howto_css_form_on_image.asp`
-- [App layout](https://wanderlog.com/)
+
 
