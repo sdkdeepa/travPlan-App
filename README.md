@@ -8,6 +8,9 @@
 - [Weatherbit](https://www.weatherbit.io/)
 - [W3Schools](https://www.w3schools.com/) `https://www.w3schools.com/howto/howto_css_form_on_image.asp`
 - [App layout](https://wanderlog.com/)
+- [JS Doc](https://jsdoc.app/)
+- [Local storage](https://www.taniarascia.com/how-to-use-local-storage-with-javascript/)
+- [Adding multiple HTML to webpack](https://www.ivarprudnikov.com/static-website-multiple-html-pages-using-webpack-plus-github-example/)
 
 # Development Environment and Architecture
 ## Architecture:
