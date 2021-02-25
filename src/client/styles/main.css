@@ -1,15 +1,16 @@
-body,
-main {
-  height: 100%;
+html,
+body {
   margin: 0;
+  padding: 0;
+  height: 100%;
 }
 .bg-img {
-  min-height: 400px;
+  min-height: 500px;
   /* Center and scale the image nicely */
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  position: relative;
+  position:absolute;
   width: 100%;
 }
 
@@ -39,12 +40,11 @@ input[type="date"] {
   margin: 5px 0 15px 0;
   background: rgb(239, 163, 125);
   text-align: center;
-  border:none;
+  border: none;
 }
 
 input[type="text"]:focus,
 input[type="date"]:focus {
-  background-color: #ddd;
   outline: lightcoral;
 }
 
@@ -78,7 +78,7 @@ main p {
 }
 
 @media (min-width: 1100px) {
-  form{
+  form {
     display: flexbox;
     flex-grow: 0px;
   }
@@ -86,7 +86,7 @@ main p {
 
 /*Blogs Grid Medium screens */
 @media (min-width: 600px) and (max-width: 1100px) {
-  form{
+  form {
     display: flex;
     justify-content: space-evenly;
     grid-gap: 10px;
