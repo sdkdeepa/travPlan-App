@@ -29,17 +29,15 @@ p {
 .nav a {
   float: right;
   display: block;
+  color:royalblue;
   text-align: center;
   text-decoration: none;
   transition: 0.3s;
 }
 
-.nav li {
-  display: inline-block;
-  margin-right: 20px;
-}
-
-ul {
-  padding: 2px;
-  margin: 0 0 0 0;
+@media screen and (max-width: 600px) {
+  .nav a {
+    float: none;
+    width: auto;
+  }
 }

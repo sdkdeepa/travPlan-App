@@ -11,7 +11,7 @@
 - [JS Doc](https://jsdoc.app/)
 - [Local storage](https://www.taniarascia.com/how-to-use-local-storage-with-javascript/)
 - [Adding multiple HTML to webpack](https://www.ivarprudnikov.com/static-website-multiple-html-pages-using-webpack-plus-github-example/)
-
+- [Testing](https://zellwk.com/blog/endpoint-testing/)
 # Development Environment and Architecture
 ## Architecture:
 The project should have a structure like the one shown below. All files shown must be present (Webpack may be split into multiple config files, and names may differ) and the app must successfully render a home page with clear design and functionality added when index.html is loaded in the browser. No errors should display in console.

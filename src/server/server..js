@@ -3,7 +3,8 @@ const app = express();
 const bodyParser = require("body-parser");
 const cors = require("cors");
 const path = require("path");
-require("dotenv").config();
+const dotenv = require('dotenv');
+dotenv.config();
 
 // Dependencies
 app.use(bodyParser.urlencoded({ extended: false }));
@@ -21,7 +22,7 @@ app.get("/", function (req, res) {
 let projectData = [];
 
 // Add new trip entry to the server
-app.post("/addEntry", (req, res) => {
+app.post("/addTrip", (req, res) => {
   const entry = req.body;
   projectData.push(entry);
 });
