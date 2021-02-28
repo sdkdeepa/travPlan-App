@@ -1,12 +1,11 @@
-/**
- * @description - Fetching API data from Weatherbit, Geonames and Pixabay
- */
+//Fetching API data from Weatherbit, Geonames and Pixabay
+
 
 // This async function fetches the city name
-export const geonamesAPI = async (city = "") => {
+export const geonamesAPI = async (city , country = "") => {
   const username = process.config.GEONAMES_USERNAME;
-  const url = `http://api.geonames.org/searchJSON?q=${city}&maxRows=1${username}`;
-  const res = await fetch(proxy + url);
+  const callUrl = `http://api.geonames.org/searchJSON?q=${city}&country=${country}&maxRows=1&username=${username}`;
+  const res = await fetch(callUrl);
   try {
     const data = await res.json();
     return data;
@@ -15,23 +14,12 @@ export const geonamesAPI = async (city = "") => {
   }
 };
 
-// // Get more info on the country from Rest Countries API
-// export const restCountriesAPI = async (country) => {
-//   const url = `https://restcountries.eu/rest/v2/name/${country}`;
-//   const res = await fetch(proxy + url);
-//   try {
-//     const data = res.json();
-//     return data;
-//   } catch (error) {
-//     console.log("Error:", error);
-//   }
-// };
 
 // Get weather data from Weatherbit API
 export const weatherbitAPI = async (lat, lon) => {
   const api_key = process.config.WEATHERBIT_API_KEY;
-  const url = `http://api.weatherbit.io/v2.0/forecast/daily?&lat=${lat}&lon=${lon}&key=${api_key}`;
-  const res = await fetch(proxy + url);
+  const callUrl = `http://api.weatherbit.io/v2.0/forecast/daily?&lat=${lat}&lon=${lon}&key=${api_key}`;
+  const res = await fetch(callUrl);
   try {
     const data = await res.json();
     return data;
@@ -43,8 +31,8 @@ export const weatherbitAPI = async (lat, lon) => {
 // Get an image of city from Pixabay API
 export const pixabayAPI = async (city, country) => {
   const api_key = process.config.PIXABAY_API_KEY;
-  const url = `https://pixabay.com/api/?key=${api_key}&q=${city}+${country}&image_type=photo`;
-  const res = await fetch(proxy + url);
+  const callUrl = `https://pixabay.com/api/?key=${api_key}&q=${city}+${country}&image_type=photo`;
+  const res = await fetch(callUrl);
   try {
     const data = await res.json();
     return data;
@@ -53,12 +41,11 @@ export const pixabayAPI = async (city, country) => {
   }
 };
 
-/**
- * @description - POST API data to the server
- */
+// POST API data to the server
+ 
 
-export const postData = async (url = "", data = {}) => {
-  const res = await fetch(url, {
+export const postData = async (callUrl = "", data = {}) => {
+  const res = await fetch(callUrl, {
     method: "POST",
     credentials: "same-origin",
     headers: {

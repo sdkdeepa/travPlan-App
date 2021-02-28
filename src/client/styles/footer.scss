@@ -1,16 +1,13 @@
 /* refernce: https://matthewjamestaylor.com/bottom-footer */
 
 footer {
-  position: absolute;
-  bottom: 5px;
+  position: fixed;
+  left: 0;
+  bottom: 0;
   width: 100%;
-  height: 2px;
-  text-align:center;
-  padding-bottom: 2px;
-  font-family: "Montserrat", sans-serif;
-  font-weight:normal;
-  font-size: large;
-padding: 0;
+  background-color:white;
+  color: black;
+  text-align: center;
 }
 
 p {

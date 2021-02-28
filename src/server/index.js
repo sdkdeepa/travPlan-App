@@ -6,6 +6,9 @@ const path = require("path");
 const dotenv = require('dotenv');
 dotenv.config();
 
+const WEATHERBIT_API_KEY= process.env.WEATHERBIT_API_KEY;
+const GEONAMES_USERNAME = process.env.GEONAMES_USERNAME;
+const PIXABAY_API_KEY = process.env.PIXABAY_API_KEY;
 // Dependencies
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
@@ -25,6 +28,7 @@ let projectData = [];
 app.post("/addTrip", (req, res) => {
   const entry = req.body;
   projectData.push(entry);
+  res.sendFile("dist/mytrips.html")
 });
 
 //Deleting existing trip entry from the server
