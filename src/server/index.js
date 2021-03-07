@@ -34,7 +34,7 @@ app.listen(port, () => console.log(`Server running! Running on localhost: ${port
 
 console.log("Your Geoname keys are",process.env.username)
 console.log( "Your Weathebit app api key", process.env.key)
-console.log( "Your Weathebit app api key", process.env.pixabaykey)
+console.log( "Your Pixabay app api key", process.env.pixabaykey)
 
 app.get('/geonames', (req, res) => {
   const {
