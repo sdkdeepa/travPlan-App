@@ -1,46 +1,70 @@
-const express = require("express");
-const app = express();
-const bodyParser = require("body-parser");
-const cors = require("cors");
-const path = require("path");
-const dotenv = require('dotenv');
-dotenv.config();
+// Setup empty JS object to act as endpoint for all routes
+projectData = {};
 
-const WEATHERBIT_API_KEY= process.env.WEATHERBIT_API_KEY;
-const GEONAMES_USERNAME = process.env.GEONAMES_USERNAME;
-const PIXABAY_API_KEY = process.env.PIXABAY_API_KEY;
-// Dependencies
+// Require Express to run server and routes
+const express = require('express');
+const bodyParser = require('body-parser');
+const dotenv = require('dotenv');
+
+require('./components');
+dotenv.config({path: './.env'})
+
+// http://api.geonames.org/
+
+// Start up an instance of app
+const app = express();
+
+/* Middleware*/
+//Here we are configuring express to use body-parser as middle-ware.
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
+
+// Cors for cross origin allowance
+const cors = require('cors');
 app.use(cors());
 
-// Init main project folder
-app.use(express.static("dist"));
+// Initialize the main project folder
+app.use(express.static('dist'));
 
-app.get("/", function (req, res) {
-  res.sendFile("dist/index.html");
+
+// Setup Server
+const port = 3000;
+
+app.listen(port, () => console.log(`Server running! Running on localhost: ${port}!`));
+
+console.log("Your Geoname keys are",process.env.username)
+console.log( "Your Weathebit app api key", process.env.key)
+console.log( "Your Weathebit app api key", process.env.pixabaykey)
+
+app.get('/geonames', (req, res) => {
+  const {
+    zip
+  } = req.query;
+
+  _fetchGeoNames(process.env.username, city).then(response => {
+    res.end(JSON.stringify(response));
+  });
 });
 
-// Create empty object to save API data
-let projectData = [];
 
-// Add new trip entry to the server
-app.post("/addTrip", (req, res) => {
-  const entry = req.body;
-  projectData.push(entry);
-  res.sendFile("dist/mytrips.html")
+app.get('/weatherbit', (req, res) => {
+  const {
+    lat,
+    long
+  } = req.query;
+
+  _fetchWeatherBit(process.env.key, lat, long).then(response => {
+    res.end(JSON.stringify(response));
+  }).catch(error => console.log(error))
 });
 
-//Deleting existing trip entry from the server
 
-// Reference: https://www.codota.com/code/javascript/functions/express/Express/delete
-app.post("/delete", (req, res) => {
-  let{id}=req.body;
-  projectData=projectData.filter((myPlan) => myPlan.id !==id);
-});
+app.get('/pixabay', (req, res) => {
+  const {
+    picture
+  } = req.query.image;
 
-//spin the server at port 8080
-const port = process.env.PORT || 8080;
-app.listen(port, () => {
-  console.log(`travPlan app listening on port ${port}!`);
+  _fetchPixabay(process.env.pixabaykey, picture).then(response => {
+    res.end(JSON.stringify(response));
+  });
 });

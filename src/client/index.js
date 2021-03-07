@@ -1,9 +1,8 @@
-import "./js/app";
-import { handleSubmit } from "./js/app";
+import { performAction } from './js/app.js'
 
-import "./styles/main.scss";
-import "./styles/footer.scss";
-import "./styles/nav.scss";
-import "./styles/trips.scss";
+import './styles/card.scss'
+import './styles/style.scss'
 
-export { handleSubmit };
+export {
+    performAction
+}
