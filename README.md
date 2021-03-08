@@ -17,12 +17,13 @@
 
 ![alt text](https://github.com/sdkdeepa/Udacity-FEND-capstone-project/blob/main/travPlan-home.png)
 ![alt text](https://github.com/sdkdeepa/Udacity-FEND-capstone-project/blob/main/travPlan-example.png)
+![alt text](https://github.com/sdkdeepa/Udacity-FEND-capstone-project/blob/main/jest.png)
 
-## Project Gif
+## Project Gif and Videos
 
 ![alt text](https://github.com/sdkdeepa/Udacity-FEND-capstone-project/blob/main/travPlan.gif)
 
-
+https://www.youtube.com/watch?v=rUg9_IQwLlM
 
 ## References used:
 - [Favicon creation](https://favicon.io/favicon-generator/)
