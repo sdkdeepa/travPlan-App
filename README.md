@@ -1,5 +1,29 @@
 # Udacity-FEND-capstone-project
 
+# How to run this app?
+
+1. Run `npm install` in the terminal to get the packages required
+
+2. Add credentials to env file - You will need to add your own API credentials to '.env' 
+3. Development environment
+      - `npm run build-dev`to run the webpack-dev-server with the development config
+      - `npm start` script to start the express server
+4. Prod environment
+     - `npm run build-prod`to run the webpack-dev-server with the development config
+     - `npm start` script to start the express server 
+     - App runs in `http://localhost:3000/`
+
+# Screenshot
+
+![alt text](https://github.com/sdkdeepa/Udacity-FEND-capstone-project/blob/main/travPlan-home.png)
+![alt text](https://github.com/sdkdeepa/Udacity-FEND-capstone-project/blob/main/travPlan-example.png)
+
+## Project Gif
+
+![alt text](https://github.com/sdkdeepa/Udacity-FEND-capstone-project/blob/main/travPlan.gif)
+
+
+
 ## References used:
 - [Favicon creation](https://favicon.io/favicon-generator/)
 - [Pixabay](https://pixabay.com/)
@@ -12,6 +36,8 @@
 - [Local storage](https://www.taniarascia.com/how-to-use-local-storage-with-javascript/)
 - [Adding multiple HTML to webpack](https://www.ivarprudnikov.com/static-website-multiple-html-pages-using-webpack-plus-github-example/)
 - [Testing](https://zellwk.com/blog/endpoint-testing/)
+
+
 # Development Environment and Architecture
 ## Architecture:
 The project should have a structure like the one shown below. All files shown must be present (Webpack may be split into multiple config files, and names may differ) and the app must successfully render a home page with clear design and functionality added when index.html is loaded in the browser. No errors should display in console.
