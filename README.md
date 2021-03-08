@@ -26,7 +26,6 @@
 https://www.youtube.com/watch?v=rUg9_IQwLlM
 
 ## References used:
-- [Favicon creation](https://favicon.io/favicon-generator/)
 - [Pixabay](https://pixabay.com/)
 - [Logo creation](https://www.freelogodesign.ca/)
 - [Geonames](https://www.geonames.org/)
