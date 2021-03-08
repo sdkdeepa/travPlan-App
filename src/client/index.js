@@ -43,9 +43,10 @@ const savetravel = async (error) => {
         const format = moment(date).format('LL');
         return format;
     }
+    //calculating the number of days remaining from the current date to the future date
     const daysremaining = (departure_date, date) => {
         const totalDays = new Date(departure_date).getTime() - new Date().getTime();
-        return Math.ceil(totalDays / 86400000);
+        return Math.ceil(totalDays / 86400000); 
     }
 
     error.preventDefault();
