@@ -1,79 +1,45 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Travel App</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel App</title>
 </head>
+<body>  
 
-<body>
-  <div id="app">
-    <h1>Travel App</h1>
-
-    <form onsubmit="Client.performAction(event)">
-      <div class="holder">
-        <label for="city">Destination</label>
-        <input type="text" id="city" placeholder="Please enter a valid city" required>
+  <div id="container">
+    <img alt="TravPlan"
+				src="https://www.freelogodesign.org/file/app/client/thumb/e696e529-435c-4d3a-8aa3-0a6390a0310e_200x200.png?1614504354489"
+				class="logo ">
+    <form id="inputDetails">
+      <div class="details">
+        <label for="city">Where are you going?</label>
+        <input type="text" id="city" placeholder="Please enter the name of the city/country planned">
       </div>
-      <br />
-      <div class="holder">
-        <label for="departing">Departing date</label>
-        <input type="date" id="departing" placeholder="Departing date" required>
+      <div class="details">
+        <label for="dep">Departure Date</label>
+        <input type="date" id="dep">
       </div>
-      <br />
-      <div class="holder">
-        <label for="returning">Returning date</label>
-        <input type="date" id="returning" placeholder="Returning date" required>
+      <div class="details">
+        <label for="ret">Return Date</label>
+        <input type="date" id="ret">
       </div>
-      <br />
-      <div class="holder">
-        <button id="generate" type="submit">Check</button>
-      </div>
+      <!--<span class="trip_countdown"></span>-->
+      
+      <button type="submit" id="save"> Save</button>  
+      <button type="submit" id="delete">Delete </button>
     </form>
-
-    <div id="loading">
-      <span>Loading....</span>
-    </div>
-
-    <section class="card-container">
-      <article class="c-card" id="slim-card">
-
-        <header class="c-card__header">
-          <img src="" alt="city" id="city" class="img c-card__image">
-        </header>
-
-        <div class="c-card__body">
-          <h2 class="c-card__intro">
-            <b>Placename:</b>
-            <span id="placeName"></span>
-          </h2>
-          <p class="c-card__intro">
-            <b>Days left before the trip:</b>
-            <span id="countDown"></span>
-          </p>
-
-          <p class="c-card__intro">
-            <b>Trip Duration:</b>
-            <span id="duration"></span>
-          </p>
-
-          <p class="c-card__intro">
-            <b>Weather Summary:</b>
-            <span id="weather-sum"></span>
-          </p>
-
-          <p class="c-card__intro">
-            <b>Temperature:</b>
-            <span id="weather-temp"></span>
-          </p>
-        </div>
-
-      </article>
-    </section>
+    <div id="add"></div>
+    
   </div>
-  <script src="app.js" type="text/javascript"></script>
+  <script>
+    // Check that service workers are supported
+    if ('serviceWorker' in navigator) {
+        // Use the window load event to keep the page load performant
+        window.addEventListener('load', () => {
+            navigator.serviceWorker.register('/service-worker.js');
+        });
+    }
+  </script>
 </body>
-
 </html>

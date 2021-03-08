@@ -1,34 +1,41 @@
+
 const path = require('path')
 const webpack = require('webpack')
 const HtmlWebPackPlugin = require("html-webpack-plugin")
 const { CleanWebpackPlugin } = require('clean-webpack-plugin')
 
 module.exports = {
+    mode:'development',
     entry: './src/client/index.js',
-    mode: 'development',
-    devtool: 'source-map',
-    stats: 'verbose',
+    devServer: {
+        port: 8050,
+        proxy: [
+            {
+                context: ["/save", "/forecast"],
+                target: "http://localhost:3000"
+            }
+        ]
+    },
     output: {
         libraryTarget: 'var',
         library: 'Client'
     },
+    mode: 'development',
+    devtool: 'source-map',
+    stats: 'verbose',
     module: {
         rules: [
             {
                 test: '/\.js$/',
                 exclude: /node_modules/,
-                loader: "babel-loader",
+                loader: "babel-loader"
             },
             {
                 test: /\.scss$/,
-                use: [
-                    'style-loader',
-                    'css-loader',
-                    'sass-loader'
-                ]
+                use: ['style-loader', 'css-loader', 'sass-loader']
             }
         ]
-    },
+    }, 
     plugins: [
         new HtmlWebPackPlugin({
             template: "./src/client/views/index.html",
