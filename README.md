@@ -1,5 +1,14 @@
 # Udacity-FEND-capstone-project
 
+# Project 
+
+![alt text](https://github.com/sdkdeepa/Udacity-FEND-capstone-project/blob/main/travPlan-home.png)
+![alt text](https://github.com/sdkdeepa/Udacity-FEND-capstone-project/blob/main/travPlan-example.png)
+
+## Project Gif
+
+![alt text](https://github.com/sdkdeepa/Udacity-FEND-capstone-project/blob/main/travPlan.gif)
+
 ## References used:
 - [Favicon creation](https://favicon.io/favicon-generator/)
 - [Pixabay](https://pixabay.com/)
