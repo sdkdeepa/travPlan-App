@@ -9,7 +9,6 @@ const recentData = (plandata) => {
     div.classList.add('travel-container');
     document.getElementById('add').appendChild(div);
     div.innerHTML = `<div class="travel" id='img' style="background-image: url('${plandata.image}');"></div>
-   
    <div class="travel" id='info'>
       <div class="travel" id="to"> Travel plan to:  <span class="same">${plandata.city}, ${plandata.country}</span>
       </div></br>

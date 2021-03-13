@@ -1,45 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Travel App</title>
-</head>
-<body>  
 
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>travPlan</title>
+</head>
+
+<body>
+  <nav class="nav">
+    <div class="title">
+      <h1>Travel App</h1>
+    </div>
+    <div class="logo"> </div>
+     <img alt="TravPlan"
+      src="https://www.freelogodesign.org/file/app/client/thumb/e696e529-435c-4d3a-8aa3-0a6390a0310e_200x200.png?1614504354489">
+  </nav>
   <div id="container">
-    <img alt="TravPlan"
-				src="https://www.freelogodesign.org/file/app/client/thumb/e696e529-435c-4d3a-8aa3-0a6390a0310e_200x200.png?1614504354489"
-				class="logo ">
     <form id="inputDetails">
       <div class="details">
         <label for="city">Where are you going?</label>
+        <br>
         <input type="text" id="city" placeholder="Please enter the name of the city/country planned">
       </div>
       <div class="details">
         <label for="dep">Departure Date</label>
+         <br>
         <input type="date" id="dep">
       </div>
       <div class="details">
         <label for="ret">Return Date</label>
+         <br>
         <input type="date" id="ret">
       </div>
       <!--<span class="trip_countdown"></span>-->
-      
-      <button type="submit" id="save"> Save</button>  
+
+      <button type="submit" id="save"> Save</button>
       <button type="submit" id="delete">Delete </button>
     </form>
     <div id="add"></div>
-    
   </div>
   <script>
     // Check that service workers are supported
     if ('serviceWorker' in navigator) {
-        // Use the window load event to keep the page load performant
-        window.addEventListener('load', () => {
-            navigator.serviceWorker.register('/service-worker.js');
-        });
+      // Use the window load event to keep the page load performant
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('/service-worker.js');
+      });
     }
   </script>
 </body>
+
 </html>

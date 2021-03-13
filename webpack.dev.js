@@ -8,7 +8,7 @@ module.exports = {
     mode:'development',
     entry: './src/client/index.js',
     devServer: {
-        port: 8050,
+        port: 3000,
         proxy: [
             {
                 context: ["/save", "/forecast"],

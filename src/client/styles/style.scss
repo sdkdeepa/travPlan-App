@@ -1,143 +1,171 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 
-body{
+body {
+  background-image: url("https://cdn.pixabay.com/photo/2015/09/13/05/58/nautical-937738_1280.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100%;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+
+  margin: 0;
+  padding: 0;
+}
+
+.nav {
+  background-color:rgb(255, 85, 0);
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  height: 100px;
+}
+
+.logo {
+  width: 200px;
+  height: 75px;
+}
+
+.title {
+  font-size: 2em;
+  text-align: left;
+  padding-bottom: 15px;
+  margin-left: 1em;
+  width: 100%;
+  color:black;  
+}
+
+#container {
+  position: relative;
+  background: rgb(205, 156, 132);
+  padding: 50px;
+  border-radius: 20px;
+  max-width: 75%;
+  margin: 100px;
+}
+.inside{
+    float: right;
+    width: 400px;
+    height: 300px;
+}
+
+#inputDetails {
+  padding-left: 10px;
+}
+
+#inputDetails .details {
+  padding-bottom: 15px;
+  width: 100%;
+}
+
+#inputDetails .details label {
+  display: block;
+  color: #0e0e0e;
+  font-size:large;
+  font-weight: bold;
+  align-items: center;
+}
+
+#inputDetails .details input {
+  background: transparent;
+  border: 1px solid gray;
+  width: 40%;
+  color: whitesmoke;
+  padding: 8px 10px;
+  border-radius: 5px;
+}
+
+::placeholder {
+  color: whitesmoke;
+}
+
+#save {
+  border: 0;
+  background: white;
+  border-radius: 5px;
+  width: 10%;
+  padding: 8px;
+  color: rgb(44, 83, 23);
+  font-weight: bolder;
+  font-size: 1.1em;
+  cursor: pointer;
+  margin-top: 10px;
+  margin-right: 25px;
+}
+
+#save:hover {
+  background-color: green;
+}
+
+#delete {
+  border: 0;
+  background: white;
+  border-radius: 5px;
+  width: 10%;
+  padding: 8px;
+  color: red;
+  font-weight: bolder;
+  text-transform: capitalize;
+  font-size: 1.1em;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+#delete:hover {
+  background-color: rgb(225, 90, 90);
+  color: darkred;
+}
+
+.same {
+  color: yellow;
+  font-weight: bolder;
+  font-style: italic;
+}
+
+#img {
+  width: 400px;
+  height: 300px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+}
+
+.travel-container {
+  display: grid;
+  grid: auto / 1fr 1fr 1fr;
+  gap: 20px;
+  color: black;
+  font-weight: bolder;
+  margin-top: 100px;
+  border-radius: 2px;
+  line-height: 15px;
+
+}
+
+.info{
+    text-align: right;
+    }
+@media (max-width: 1153px) {
+  body {
     background-image: url("https://cdn.pixabay.com/photo/2015/09/13/05/58/nautical-937738_1280.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     height: 100vh;
     width: 100%;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 16px;
-}
+    font-family: "Montserrat", sans-serif;
+    font-size: 12px;
+  }
 
-#container{
-    position:relative;
-    //transform: translate(-50%, -50%);
-    background:rgb(43, 130, 236);
-    padding: 100px;
-    border-radius: 10px;
-     ;
-}
-
-#title{
-    font-size: 2em;
-    text-align: center;
-    padding-bottom: 15px;
-    color:black;
-}
-
-#inputDetails{
-    padding-left: 10px;
-}
-
-
-#inputDetails .details{
-    padding-bottom: 15px;
-    width: 100%;
-}
-
-#inputDetails .details label{
-    display: block;
-    color: white;
-    align-items: center;
-}
-
-#inputDetails .details input{
-    background: transparent;
-    border: 1px solid black;
-    width: 40%;
-    color: black;
-    padding: 8px 10px;
-    border-radius: 5px;
-}
-
-
-::placeholder {
-    color: #4c4b48;
-}
-
-#save{
-    border: 0;
-    background: rgb(44, 83, 23);
-    border-radius: 5px;
-    width: 10%;
-    padding: 8px; 
-    color: white;
-    font-weight: bolder;
-    font-size: 1.1em;
-    cursor: pointer;
-    margin-top: 10px;
-    margin-right: 25px;
-}
-
-#save:hover{
-    background-color: green;
-}
-
-#delete{
-    border: 0;
-    background:white;
-    border-radius: 5px;
-    width: 10%;
-    padding: 8px; 
-    color:darkorange;
-    font-weight: bolder;
-    text-transform: capitalize;
-    font-size: 1.1em;
-    cursor: pointer;
-    margin-top: 10px;
-}
-
-#delete:hover{
-    background-color:rgb(225, 90, 90);
-    color: darkred;
-}
-
-.same{
-
-    color: yellow;
-    font-weight: bolder;
-}
-
-#img{
-   width: 400px;
-   height: 300px;
-   background-size: cover;
-   background-repeat: no-repeat;
-   border-radius: 50px;
-}
-
-.travel-container{
+  .travel-container {
     display: grid;
-    grid: auto / 1fr 1fr 1fr;
+    grid-template-columns: repeat(1, 3fr);
     gap: 20px;
-    color: #164406;
+    color: black;
     font-weight: bolder;
-    margin-top: 20px;
-    border-radius: 5px;
+    font-size: medium;
+    margin-top: 100px;
+    border-radius: 2px;
     line-height: 15px;
-}
-
-@media (max-width:1153px) {
-    body{
-        background-image: url("https://cdn.pixabay.com/photo/2015/09/13/05/58/nautical-937738_1280.jpg");
-        background-size: cover;
-        background-repeat: no-repeat;
-        height: 100vh;
-        width: 100%;
-        font-family: 'Montserrat', sans-serif;
-        font-size: 12px;
-    }
-
-    
-    .travel-container{
-        display: grid;
-        grid-template-columns: repeat(1, 3fr);
-        gap: 20px;
-        color: #164406;
-        font-weight: bold;
-        margin-top: 20px;
-        border-radius: 5px;
-        line-height: 15px;
-    }
+    font-family: "Montserrat", sans-serif;
+  }
 }
