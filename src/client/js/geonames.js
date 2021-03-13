@@ -10,10 +10,8 @@ export async function getGeonameLocation(city) {
          location.lng = traveldata.geonames[0].lng;
          location.country = traveldata.geonames[0].countryName;
          return location;
-    } catch(err){
-              console.log(err);
+    } catch(e){
+              console.log("Error in geonames api", e);
     }
   }
-
-
 

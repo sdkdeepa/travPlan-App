@@ -6,8 +6,7 @@ const getweatherCordinates = async(lat, lng) => {
         const traveldata = await res.json();
           return traveldata;
       } catch (e) {
-        console.log(e);
+        console.log("Error in weatherbit api", e);
       }
 }
-
 export{getweatherCordinates}

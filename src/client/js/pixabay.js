@@ -7,7 +7,7 @@ const getPixabayImage = async(city) => {
         return cityData.hits[1].largeImageURL;
           }
     catch (e) {
-        console.log();
+        console.log("Error in pixabay Api", e);
     }
 }
 
