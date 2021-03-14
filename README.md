@@ -29,6 +29,7 @@ https://www.youtube.com/watch?v=rUg9_IQwLlM
 - [Pixabay](https://pixabay.com/)
 - [Logo creation](https://www.freelogodesign.ca/)
 - [Geonames](https://www.geonames.org/)
+- [Heroku Issue solved](https://stackoverflow.com/questions/55889110/how-do-i-have-geonames-api-work-with-https)
 - [Weatherbit](https://www.weatherbit.io/)
 - [W3Schools](https://www.w3schools.com/) `https://www.w3schools.com/howto/howto_css_form_on_image.asp`
 - [App layout](https://wanderlog.com/)
