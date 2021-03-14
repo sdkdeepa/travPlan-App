@@ -6,7 +6,7 @@
   "scripts": {
     "test": "jest",
     "start": "node ./src/server/server.js",
-    "build": "webpack --mode production --config ./webpack.prod.js && npm run start",
+    "build": "webpack --mode production --config ./webpack.prod.js",
     "build-dev": "webpack-dev-server --config webpack.dev.js --open",
     "build-prod": "webpack --config webpack.prod.js"
   },
