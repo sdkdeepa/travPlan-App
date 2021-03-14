@@ -10,9 +10,9 @@
     "build-dev": "webpack-dev-server --config webpack.dev.js --open",
     "build-prod": "webpack --config webpack.prod.js"
   },
- "engines": {
-   "node": "12.16.3"
-   },
+  "engines": {
+    "node": "12.16.3"
+  },
   "author": "Deepa Subramanian",
   "license": "ISC",
   "devDependencies": {

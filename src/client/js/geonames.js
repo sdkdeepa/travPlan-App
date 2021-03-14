@@ -1,5 +1,5 @@
 export async function getGeonameLocation(city) {
-    const userName = 'travel01';
+    const userName = 'travel01'
     const url=`http://api.geonames.org/searchJSON?q=${city}&maxRows=1&username=${userName}`;
     try {
          const response = await fetch(url);

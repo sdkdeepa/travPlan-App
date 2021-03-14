@@ -12,7 +12,7 @@ module.exports = {
         proxy: [
             {
                 context: ["/save", "/forecast"],
-                target: "http://localhost:3000"
+                target: "http://localhost:8050"
             }
         ]
     },
