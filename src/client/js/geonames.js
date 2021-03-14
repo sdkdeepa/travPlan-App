@@ -14,4 +14,3 @@ export async function getGeonameLocation(city) {
               console.log("Error in geonames api", e);
     }
   }
-
