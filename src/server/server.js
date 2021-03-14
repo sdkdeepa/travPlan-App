@@ -1,13 +1,17 @@
 const projectData = {};
 const express = require('express');
-
 const app = express();
-
 const bodyParser = require('body-parser');
 
-app.use(bodyParser.urlencoded({ extended: false }));
+app.use(function (req, res, next){
+  if (req.headers['x-forwarded-proto'] === 'https') {
+    res.redirect('http://' + req.hostname + req.url);
+  } else {
+    next();
+  }
+})
+app.use(bodyParser.urlencoded({extended: false}))
 app.use(bodyParser.json());
-
 const cors = require('cors');
 app.use(cors());
 
