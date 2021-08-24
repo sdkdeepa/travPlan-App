@@ -38,6 +38,9 @@ https://www.youtube.com/watch?v=rUg9_IQwLlM
 - [Adding multiple HTML to webpack](https://www.ivarprudnikov.com/static-website-multiple-html-pages-using-webpack-plus-github-example/)
 - [Testing](https://zellwk.com/blog/endpoint-testing/)
 
+## Images used here are from pixa bay
+
+- [Background](https://cdn.pixabay.com/photo/2015/09/13/05/58/nautical-937738_1280.jpg)
 
 # Development Environment and Architecture
 ## Architecture:
