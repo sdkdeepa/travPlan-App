@@ -1,4 +1,4 @@
-# Udacity-FEND-capstone-project
+# Trav Plan Website
 
 # How to run this app?
 
